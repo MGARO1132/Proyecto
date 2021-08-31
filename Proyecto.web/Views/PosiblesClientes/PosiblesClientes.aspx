@@ -7,6 +7,8 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Contenedor" runat="server">
+   
+
     <div class="mx-auto mt-5">
      <%--Primera seccion --%>
          
