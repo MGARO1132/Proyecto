@@ -66,7 +66,7 @@ namespace Proyecto.web.Views.Login
                         cookie.Expires = DateTime.Now.AddDays(-1);
                         Response.Cookies.Add(cookie);
                     }
-                    Response.Redirect("../Index/index.aspx");//Redirección
+                    Response.Redirect("../Index/index.aspx?stEmail="+txtEmail.Text);//Redirección
                 }
                 else
                     throw new Exception("Usuario o password incorrectos ");

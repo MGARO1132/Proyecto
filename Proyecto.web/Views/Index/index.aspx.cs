@@ -11,7 +11,14 @@ namespace Proyecto.web.Views.Index
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string stEmail = string.Empty;
+            if(!IsPostBack)
+            {
+                if(Request.QueryString["stEmail"]!=null)
+                {
+                    stEmail = Request.QueryString["stEmail"].ToString();
+                }
+            }
         }
     }
 }
