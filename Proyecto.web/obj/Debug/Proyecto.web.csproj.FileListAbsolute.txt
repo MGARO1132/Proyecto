@@ -59,3 +59,4 @@ C:\Users\marce\OneDrive\Programacion\Proyectos NET\CursoASP 2021\Proyecto.web\ob
 C:\Users\marce\OneDrive\Programacion\Proyectos NET\CursoASP 2021\Proyecto.web\obj\Debug\Proyecto.web.pdb
 C:\Users\marce\OneDrive\Programacion\Proyectos NET\CursoASP 2021\Proyecto.web\bin\Proyecto.Logica.dll
 C:\Users\marce\OneDrive\Programacion\Proyectos NET\CursoASP 2021\Proyecto.web\bin\Proyecto.Logica.pdb
+C:\Users\marce\OneDrive\Programacion\Proyectos NET\CursoASP 2021\Proyecto.web\bin\AjaxControlToolkit.dll
