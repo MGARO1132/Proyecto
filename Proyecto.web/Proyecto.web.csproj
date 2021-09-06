@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PosiblesClientesController.cs" />
+    <Compile Include="Controllers\TareasController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recourses\Template\Template.Master.cs">
       <DependentUpon>Template.Master</DependentUpon>

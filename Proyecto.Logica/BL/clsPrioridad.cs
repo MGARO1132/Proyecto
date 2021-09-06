@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace Proyecto.Logica.BL
 {
-    public class clsEstadoTarea
+    public class clsPrioridad
     {
         SqlConnection _SqlConnection = null;//me permite establecer conexion con la BBDD
         SqlCommand _SqlCommand = null;//me permite ejecutar comandos SQL
@@ -17,17 +17,17 @@ namespace Proyecto.Logica.BL
 
         SqlParameter _sqlParameter = null;
 
-        public clsEstadoTarea()
+        public clsPrioridad()
         {
             clsConexion obclsConexxion = new clsConexion();
             stConexion = obclsConexxion.getConexion();
         }
         /// <summary>
-        /// CONSULTA ESTADO TAREA
+        /// CONSULTA PRIORIDAD
         /// </summary>
-        /// <returns>REGISTROS ESTADO TAREA</returns>
+        /// <returns>REGISTROS PRIORIDAD</returns>
 
-        public DataSet getConsultarEstadoTareas()
+        public DataSet getConsultarPrioridad()
         {
             try
             {
@@ -36,7 +36,7 @@ namespace Proyecto.Logica.BL
                 _SqlConnection = new SqlConnection(stConexion);
                 _SqlConnection.Open();
 
-                _SqlCommand = new SqlCommand("spConsultarEstadoTareas", _SqlConnection);//Nombre del Store Procedure que se encuentra en la BBDD
+                _SqlCommand = new SqlCommand("spConsultarPrioridad", _SqlConnection);//Nombre del Store Procedure que se encuentra en la BBDD
 
                 _SqlCommand.CommandType = CommandType.StoredProcedure;
 
@@ -53,6 +53,6 @@ namespace Proyecto.Logica.BL
             catch (Exception ex) { throw ex; }
             finally { _SqlConnection.Close(); }
         }
-      
+
     }
 }
